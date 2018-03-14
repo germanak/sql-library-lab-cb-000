@@ -23,5 +23,15 @@ CREATE TABLE books (
 );
 
 CREATE TABLE characters (
-  id INTEGER PRIMARY KEY
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  motto TEXT,
+  species TEXT,
+  author_id TEXT,
+  series_id TEXT
+);
+
+CREATE TABLE character_books (
+  id INTEGER PRIMARY KEY,
+  book_id INTEGER
 );
